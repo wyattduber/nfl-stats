@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL Passer Rating Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../theme.css">
+    <link rel="shortcut icon" type="image/png" href="../home/resources/football.png"/>
+    <meta property="keywords" content="football,nfl,stats,nfl stats,live"/>
+    <meta property="author" content="Wyatt Duberstein"/>
+    <meta property="description" content="Wyatt Duberstein's NFL Stats Site"/>
+    <meta property="og:description" content="Wyatt Duberstein's NFL Stats Site"/>
+    <meta property="og:image" content="https:nfl.wyattduber.com/home/resources/football.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="512"/>
+    <meta property="og:image:height" content="512"/>
+    <meta property="og:title" content="Wyatt Duberstein"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://nfl.wyattduber.com/passer-rating-calculator/"/>
+    <meta name="twitter:title" content="Wyatt Duberstein">
+    <meta name="twitter:description" content="Wyatt Duberstein's NFL Stats Site">
+    <meta name="twitter:image" content="https:nfl.wyattduber.com/home/resources/football.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#01040e">
+</head>
+
+<body>
+    <div class="navbar">
+        <h2>NFL Stats Hub</h2>
+        <div class="menu">
+            <a href="../home/">Home</a>
+            <a href="#"><b>Passer Rating Calculator</b></a>
+            <!-- Add other menu links as needed -->
+        </div>
+	<button id="darkModeToggle">Toggle Dark Mode</button>
+    </div>
+    <div class="container">
+        <h1>NFL Passer Rating Calculator</h1>
+        <form id="calculator-form">
+            <input type="number" id="attempts" placeholder="Attempts">
+            <input type="number" id="completions" placeholder="Completions">
+            <input type="number" id="yards" placeholder="Yards">
+            <input type="number" id="touchdowns" placeholder="Touchdowns">
+            <input type="number" id="interceptions" placeholder="Interceptions">
+            <button type="button" onclick="calculateRating()">Calculate</button>
+        </form>
+        <div class="result">
+            <span>Passer Rating: </span>
+            <span id="rating-result">0.0</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="../main.js"></script>
+</body>
+
+</html>

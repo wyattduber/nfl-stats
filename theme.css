@@ -1,0 +1,63 @@
+.navbar {
+    margin: 0;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.menu a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.menu a:hover {
+    opacity: 0.7;
+}
+
+/* Default Light Theme */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    /* other default styles... */
+}
+
+.navbar {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Default Dark Mode */
+body.dark-mode {
+    background-color: #333333;
+    color: #f5f5f5;
+}
+
+body.dark-mode .navbar {
+    background-color: #222;
+    /* add other navbar styles for dark mode if needed */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
