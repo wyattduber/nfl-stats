@@ -1,5 +1,7 @@
-document.getElementById('darkModeToggle').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('darkModeToggle').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
 });
 
 // Check user's choice on page load
